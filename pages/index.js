@@ -9,6 +9,7 @@ export default function Home() {
       <div className="container">
         <Head>
           <title>USER DETAILS</title>
+          <link rel="icon" type="image/png" sizes="32x32" href="https://fullthrottlelabs.com/favicon-32x32.png"></link>
         </Head>
         <UserPanel />
         <footer></footer>

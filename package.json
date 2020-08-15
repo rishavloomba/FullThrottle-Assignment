@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --config ./.prettierrc --write 'src/**'"
   },
   "dependencies": {
     "next": "9.5.2",
+    "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-google-flight-datepicker": "^0.1.10",

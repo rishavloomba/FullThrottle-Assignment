@@ -1,7 +1,7 @@
 export default function Card(props) {
   const handleClick = (e) => {
     props.handleClick && props.handleClick(e);
-  }
+  };
   return (
     <>
       <style jsx>{`
@@ -29,13 +29,15 @@ export default function Card(props) {
           cursor: pointer;
         }
       `}</style>
-        <div className='card'>
-          <div className=''>
-            <h3>{props.name}</h3>
-            <p>{props.address}</p>
-          </div>
-          <div className='view-more' onClick={handleClick}>View &rarr;</div>
+      <div className="card">
+        <div className="">
+          <h3>{props.name}</h3>
+          <p>{props.address}</p>
         </div>
+        <div className="view-more" onClick={handleClick}>
+          View &rarr;
+        </div>
+      </div>
     </>
-  )
+  );
 }
