@@ -22,3 +22,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Flow
+
+Package.json
+    ->pages (main routes)
+        index.js represents to localhost:3000/
+        user.js represents to localhost:3000/user
+    -> public directory contains all static content like images and icons
+    -> pages/api
+       this is next.js api routes for data or db calls
+    -> src
+        -> components 
+            it contains basic react components and layouts
+        -> utils 
+            it contains helper methods

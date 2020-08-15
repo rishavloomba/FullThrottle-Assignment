@@ -6,9 +6,13 @@ export default function DateView(props) {
     const [showCalender, setShowCalender] = useState(false);
     const [activeInd, setActiveInd] = useState(-1);
     const handleClick = (activeIndex) => {
-      if(activeIndex> -1){
-        setActiveInd(activeIndex);
-        setShowCalender(true);
+      if(activeIndex >-1){
+        if(activeIndex === activeInd && showCalender){
+          setShowCalender(false);
+        }else{
+          setActiveInd(activeIndex);
+          setShowCalender(true);
+        }
       }
     }
     return (
